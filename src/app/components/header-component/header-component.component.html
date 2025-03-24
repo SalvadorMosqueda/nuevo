@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-lg  bg-dark">
+
+
+
+
+
+
+<div class="w-full  flex justify-between">
+  <h1 class=" h-6 text-white">Prueba </h1>
+  <mat-form-field>
+    <mat-label>Selecciona una fecha</mat-label>
+    <input matInput
+      [matDatepicker]="picker"
+      [formControl]="dateControl"
+      placeholder="Elegir fecha">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+
+</div>
+
+
+
+</nav>

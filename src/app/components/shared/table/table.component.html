@@ -1,0 +1,22 @@
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Fecha</th>
+      <th scope="col">producto</th>
+      <th scope="col">Cantidad vendida</th>
+      <th scope="col">Ingreso</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let sale of sales">
+      <th scope="row">1</th>
+      <td>{{sale.fecha}}</td>
+      <td>{{sale.producto}}</td>
+      <td>{{sale.cantidad}}</td>
+      <td>{{sale.ingreso}}</td>
+    </tr>
+
+  </tbody>
+</table>
+
