@@ -42,6 +42,7 @@ export class DashboardComponentComponent {
 
     const initialDate = this.selectedDate || new Date();     this.selectedDate = initialDate;
 
+    console.log("🚀 ~ DashboardComponentComponent ~ ngOnInit ~ initialDate:", initialDate)
 
     this.filterSalesByDate(this.selectedDate);
 
@@ -76,6 +77,7 @@ export class DashboardComponentComponent {
       const monthSales = filteredSales.filter(sale => sale.date.toLocaleString('default', { month: 'long' }) === month);
       return monthSales.reduce((sum, sale) => sum + sale.sales, 0); // Sumar ventas del mismo mes
     });
+    console.log("🚀 ~ DashboardComponentComponent ~ filterSalesByDate ~ dato:", data)
 
 
     this.lineChartData = {

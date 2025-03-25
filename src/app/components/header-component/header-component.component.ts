@@ -28,6 +28,7 @@ export class HeaderComponentComponent {
   constructor(private dateService: DateService) {
 
     this.dateControl.valueChanges.subscribe(value => {
+      console.log('entro')
      this.dateService.setDate(value)
     });
   }
